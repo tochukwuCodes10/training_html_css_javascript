@@ -1,0 +1,35 @@
+
+// if (condition) {
+//     statement;
+// }
+
+let age = 2;
+if (age >= 2){
+    console.log("our age is up to 2");
+}; 
+
+let y = 3;
+if (y > 2) {
+    console.log("y is greater than 2");
+} else {
+    console.log("y is less than 2");
+}
+
+// ternary operator
+y > 2 ? console.log("y is greater than 2")  : console.log("y is less than 2");
+
+age = 3;
+age > 2 ? console.log("our age is up to 2") : console.log("our age is less than 2");
+
+// switch (expression) 
+
+switch (y) {
+    case 1:
+        console.log("y is 1");
+        break; 
+    case 2:
+        console.log("y is 2");
+        break;
+      
+}
+

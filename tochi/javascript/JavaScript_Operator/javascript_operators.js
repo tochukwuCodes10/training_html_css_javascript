@@ -85,3 +85,4 @@ let isSunny = true;
 let isCloudy = false;
 let isWeatherNice = isSunny || isCloudy;
 console.log(isWeatherNice);
+
