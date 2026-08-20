@@ -6,11 +6,17 @@ Used as a a relative api endpoint
 <!doctype html>
 <html lang="en">
   <head>
-    <base href="http://localhost:3650" />
+    <!-- <base href="http://localhost:3650" /> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/userform.css" rel="stylesheet" />
     <title>User Information</title>
+    <script>
+      globalThis.cool = "cool";
+    </script>
+    <script src="/userform.mjs" type="module">
+      // console.log(user)
+    </script>
   </head>
   <body>
     <fieldset>

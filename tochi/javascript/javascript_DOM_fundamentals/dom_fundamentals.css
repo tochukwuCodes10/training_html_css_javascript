@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 4;
+}
+
+.fruits_container {
+  width: 600px;
+  height: 600px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: repeat(5, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 4;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  /* flex-direction: column; */
+  gap: 2;
+  /* padding: 4; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10;
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); */
+  /* width: 200px; */
+  /* height: 200px; */
+  /* contain: layout; */
+  /* view-transition-name: temp; */
+}
+
+div {
+  /* width: 150px; */
+  /* height: 150px; */
+  /* background: crimson; */
+  cursor: pointer;
+}
+
+.animate {
+  width: 150px;
+  height: 150px;
+  inset: 0;
+  z-index: 3;
+  /* background: royalblue; */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  contain: paint;
+  view-transition-name: temp;
+}
+
+::view-transition-old(temp) {
+  animation: old-animation 400ms ease reverse backwards;
+}
+
+::view-transition-new(temp) {
+  animation: new-animation 400ms ease both reverse;
+}
+
+@keyframes old-animation {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes new-animation {
+  from {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(0);
+    opacity: 1;
+  }
+}

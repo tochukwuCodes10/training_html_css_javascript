@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dom_fundamentals.css" rel="stylesheet" />
+    <title>Document Object Model Course</title>
+  </head>
+  <body>
+    <div class="card_container"></div>
+    <section class="fruits_container">
+      <div class="container">
+        <figure>
+          <img src="orange_juice.png" alt="" />
+        </figure>
+      </div>
+      <div class="container">
+        <figure>
+          <img src="sourshop.png" alt="" />
+        </figure>
+      </div>
+      <div class="container">
+        <figure>
+          <img src="banana.png" alt="" />
+        </figure>
+      </div>
+      <div class="container">
+        <figure>
+          <img src="watermelon.png" alt="" />
+        </figure>
+      </div>
+      <div class="container">
+        <figure>
+          <img src="recipe_1.png" alt="" width="50" height="50" />
+        </figure>
+      </div>
+      <div class="container">
+        <figure>
+          <img src="recipe_2.png" alt="" width="50" height="50" />
+        </figure>
+      </div>
+    </section>
+
+    <template
+      id="card"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      "
+    >
+      <article>
+        <h3 class="title"></h3>
+        <p class="description"></p>
+      </article>
+    </template>
+    <script src="dom_fundamentals.js"></script>
+  </body>
+</html>
